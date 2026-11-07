@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Querida Iris…</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14161c;--navy:#2b3040;--red:#e5222b;--yellow:#ffd93b;--paper:#fffefb}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Patrick Hand","Comic Sans MS",cursive,sans-serif;font-size:clamp(1.15rem,3.6vw,1.4rem);line-height:1.5;overflow-x:hidden}
+h1,h2{font-family:Chewy,"Comic Sans MS",cursive,sans-serif;font-weight:400;line-height:1.05;text-align:center}
+h1{font-size:clamp(3.4rem,15vw,7rem)}
+h2{font-size:clamp(2.2rem,8vw,3.6rem);margin-bottom:1.2rem}
+.navy{color:var(--navy)}
+section{position:relative;max-width:640px;margin:0 auto;padding:4.5rem 1.4rem}
+p{margin-bottom:1rem}
+.sw{position:absolute;width:90px;height:auto;fill:none;stroke:var(--ink);stroke-width:3.5;stroke-linecap:round;opacity:.9;pointer-events:none}
+.sw.l{left:-34px;top:1.5rem}.sw.r{right:-34px;bottom:1.5rem;transform:scaleX(-1)}
+@media(min-width:760px){.sw{width:130px}.sw.l{left:-150px}.sw.r{right:-150px}}
+.pol{background:#fff;padding:10px 10px 14px;border:2px solid var(--ink);box-shadow:5px 6px 0 var(--ink);margin:1.6rem auto;max-width:340px;transform:rotate(-2deg)}
+.pol.b{transform:rotate(2deg)}
+.pol img{display:block;width:100%;height:auto}
+.pol figcaption{text-align:center;padding-top:.5rem;font-size:1.1rem}
+.pol .who{display:flex;justify-content:space-between;padding:.4rem 1.2rem 0}
+/* portada */
+#cover{position:fixed;inset:0;z-index:10;background:var(--paper);display:grid;place-items:center;text-align:center;padding:1.4rem;transition:opacity .9s,visibility .9s}
+#cover.gone{opacity:0;visibility:hidden}
+#cover .de{font-size:1.3rem;margin-top:1.4rem}
+#cover .heart{color:var(--navy);font-size:2.4rem;display:block;margin:.6rem 0}
+button{font:inherit;cursor:pointer;border:2px solid var(--ink);background:var(--yellow);color:var(--ink);padding:.6rem 1.6rem;border-radius:999px;box-shadow:3px 4px 0 var(--ink);margin-top:1.6rem}
+button:active{transform:translate(2px,3px);box-shadow:1px 1px 0 var(--ink)}
+button:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.beat{animation:beat 1.6s ease-in-out infinite;display:inline-block}
+@keyframes beat{50%{transform:scale(1.18)}}
+/* aparición */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+/* te amo tanto */
+.amo p{border-left:5px solid var(--red);padding-left:.9rem}
+.firma{font-family:Chewy,cursive;font-size:2rem;text-align:right;margin-top:1.6rem}
+.hl{position:fixed;pointer-events:none;z-index:20;font-size:1.6rem;animation:up 1.8s ease-out forwards}
+@keyframes up{to{transform:translateY(-70vh) rotate(25deg);opacity:0}}
+.wide{max-width:760px}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:.4rem 1.2rem}
+.gal .pol{margin:1rem 0;max-width:none}
+.gal .pol:nth-child(3n){grid-column:1/-1;max-width:340px;margin:1rem auto}
+.fix{aspect-ratio:900/828;object-fit:cover;object-position:top}
+@media(max-width:520px){.gal{grid-template-columns:1fr}.gal .pol{max-width:340px;margin:1rem auto}}
+#snd{position:fixed;right:1rem;bottom:1rem;z-index:30;width:3rem;height:3rem;padding:0;margin:0;font-size:1.4rem;line-height:1;background:var(--paper)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="s" viewBox="0 0 100 220"><path d="M62 4C88 40 86 70 56 98 22 132 30 168 52 214M30 70C8 60 2 84 24 92c20 6 20-26-2-24"/></symbol>
+</defs></svg>
+
+<div id="cover">
+  <div>
+    <h1>Querida<br><span class="navy">Iris…</span></h1>
+    <span class="heart beat">♥</span>
+    <div class="de">De: Isaac<br>Para: Iris</div>
+    <button id="open">Abrir carta</button>
+  </div>
+</div>
+
+<main>
+<section class="rv">
+  <svg class="sw l"><use href="#s"/></svg>
+  <h2>OJO</h2>
+  <p style="text-align:center">Te advierto que es mi primera vez haciendo esto por alguien. Con más razón lo estoy haciendo, porque yo te amo mucho y me gustas mucho, mi Iris. Todo lo que voy a decir es con toda mi honestidad y amor.</p>
+</section>
+
+<section class="rv">
+  <svg class="sw r"><use href="#s"/></svg>
+  <h2>La primera vez que te conocí</h2>
+  <p>Todo empezó un 15 de septiembre. No sabía que esa conversación sería el inicio de algo tan especial. Desde ese momento comenzamos a hablar y, sin darnos cuenta, la conexión fue creciendo. Era como si Dios ya lo tuviera planeado.</p>
+</section>
+
+<section class="rv">
+  <svg class="sw l"><use href="#s"/></svg>
+  <h2>Cuando supe que me gustaste :)))</h2>
+  <p>Lo supe la primera vez que nos vimos, cuando me diste esa camisa. Un gesto tan simple, pero tan significativo para mí. Yo también te regalé una. Desde ahí empezaste a ocupar un lugar diferente en mi vida… y en mi corazón.</p>
+  <p>Ya desde ahí me gustabas por como eres, física y psicológicamente. Me gustaba tu cara, tu cuerpo, tu forma de ser, tus actitudes, lo delicada que eres; todo eso me da ataque de amor. Y, obviamente, tu interés hacia mí.</p>
+</section>
+
+<section class="rv">
+  <svg class="sw r"><use href="#s"/></svg>
+  <h2>Cuando me enamoré de ti <span style="color:var(--red)">♥</span></h2>
+  <figure class="pol"><img src="media/noche.jpg" alt="Iris e Isaac la noche del 23 de mayo, con un ramo de flores" loading="lazy">
+    <div class="who"><span>Tú</span><span>Yo</span></div><figcaption>Así estábamos</figcaption></figure>
+  <p>Los días pasaroooon, cada vez me gustabas más. Nos veíamos y era incómodo, jejeje, pero igual nos hablábamos. Esa conexión que tenemos ahora, las miradas, cómo estábamos muy de cerca, tu cara y tu personalidad me tenían en volao.</p>
+  <p>Ya ese día, 23 de mayo, viernes, te pedí que fueras mi novia… En ese momento me enamoré mucho más de ti, con esperanzas de tener una relación estable contigo, con harto amor. Te dije que te quiero, me gustas, y así fue mutuo. Te abracé, te besé, y fue un momento muy satisfactorio e inolvidable ♥</p>
+</section>
+
+<section class="rv">
+  <svg class="sw l"><use href="#s"/></svg>
+  <h2>¿Por qué tú? <span class="navy">♥</span></h2>
+  <figure class="pol b"><img src="media/selfie.jpg" alt="Iris e Isaac juntos en una selfie" loading="lazy"></figure>
+  <p>Iris, sinceramente te elijo a ti por razones como lo increíble de persona que eres, una chica tan única. Por tu amabilidad, por el cariño que me das, que es capaz de alegrarme todos los días. Con tan solo tu presencia y tu compañía me das paz y alegría.</p>
+  <p>En las veces que no nos vemos, aunque sea uno de tus mensajes le sonrío al celular. Cuando me llega una notificación, me fijo si eres tú. Supe la persona que eres desde un principio, Iris. Eres única ♥</p>
+</section>
+
+<section class="rv wide">
+  <h2>Nuestros momentos</h2>
+  <div class="gal">
+    <figure class="pol"><img src="media/parque.jpg" alt="Iris e Isaac abrazados en el parque" loading="lazy"></figure>
+    <figure class="pol b"><img class="fix" src="media/beso.jpg" alt="Iris e Isaac dándose un beso en el parque" loading="lazy"></figure>
+    <figure class="pol"><img src="media/collage1.jpg" alt="Collage en blanco y negro de Iris e Isaac" loading="lazy"></figure>
+    <figure class="pol b"><img src="media/collage2.jpg" alt="Collage de fotos de Iris e Isaac" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="amo">
+  <svg class="sw r"><use href="#s"/></svg>
+  <h2 class="rv">¿Cuánto te amo??</h2>
+  <p class="rv">Iris, yo te amo tanto que no me alcanzan las palabras. Te amo tanto, dispuesto a todo para siempre estar contigo, arriesgar literalmente todo, siempre querer verte sonreír, nunca con pena.</p>
+  <p class="rv">Te amo tanto que pasaré por las buenas y las malas contigo.</p>
+  <p class="rv">Te amo tanto que me di el tiempo para hacerte esto.</p>
+  <p class="rv">Te amo tanto que estoy atento a si me has enviado un mensaje o me has respondido.</p>
+  <p class="rv">Te amo tanto que siempre me preocupo por ti y estoy atento cuando estés mal.</p>
+  <p class="rv">Te amo tanto que te dedico la mayoría de mi tiempo.</p>
+  <p class="rv">Te amo tanto como para mejorar de hombre: mi cuerpo, mi mente, mis notas (aunque estoy en eso, jejeje).</p>
+  <p class="rv">Te amo tanto que siempre pienso en ti y me olvido de otras cosas…</p>
+  <p class="rv">Me esfuerzo tanto para ser suficiente para ti. Te amo tanto que siempre te veo con ojos de enamorado.</p>
+  <p class="rv">Te amo tanto que siempre te demostraré mi lado más débil solo a ti, capaz de llorar contigo, de mostrarte la gran confianza que tengo contigo, mi niña :c</p>
+</section>
+
+<section class="rv">
+  <h2>Finalmente, mi querida Iris <span class="navy">♥</span></h2>
+  <p>Y ya, eso es todo… Lo único que quiero es que estemos juntos para siempre, apoyándonos, amándonos muchísimo y aprovechando cada momento que podamos vernos. Me comprometo a no hacerte daño nunca, ni hacerte sentir mal, sino todo lo contrario, mi niña linda.</p>
+  <p>Siempre estaré para ti: si necesitas ayuda, amor, desahogarte o solo hablar, ahí estaré. Quiero darte todo mi tiempo, porque eres una persona maravillosa y te tengo toda mi confianza y amor. Prometo seguir mejorando por ti, con todo mi amor.</p>
+  <p class="firma">—Isaac 🫶</p>
+  <p style="text-align:center"><button id="te">Te amo ♥</button></p>
+</section>
+</main>
+<audio id="bgm" src="media/musica.mp3" loop preload="none"></audio>
+<button id="snd" hidden aria-label="Pausar o reanudar la música">♪</button>
+
+<script>
+const cover=document.getElementById('cover');
+const bgm=document.getElementById('bgm'),snd=document.getElementById('snd');
+snd.onclick=()=>{if(bgm.paused){bgm.play();snd.textContent='♪'}else{bgm.pause();snd.textContent='✕'}};
+document.getElementById('open').onclick=()=>{bgm.volume=.05;bgm.play().catch(()=>{});snd.hidden=false;cover.classList.add('gone');document.body.style.overflow='';scrollTo(0,0)};
+document.body.style.overflow='hidden';
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.getElementById('te').onclick=e=>{
+  const r=e.target.getBoundingClientRect();
+  for(let i=0;i<14;i++){const h=document.createElement('span');h.className='hl';h.textContent=i%3?'♥':'💛';
+    h.style.left=(r.left+r.width/2+(Math.random()*160-80))+'px';h.style.top=(r.top+Math.random()*30)+'px';
+    h.style.color=i%2?'#e5222b':'#2b3040';h.style.animationDelay=(i*70)+'ms';
+    document.body.appendChild(h);setTimeout(()=>h.remove(),2600)}
+};
+</script>
+</body>
+</html>
